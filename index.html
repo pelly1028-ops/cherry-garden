@@ -3,39 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Cherry Garden English</title>
 
 <style>
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
 body{
   margin:0;
   font-family:Arial,"Microsoft JhengHei",sans-serif;
-  color:#54485f;
-  background:
-    radial-gradient(circle at 15% 10%,#fff5ca 0,transparent 18%),
-    radial-gradient(circle at 90% 15%,#eadfff 0,transparent 23%),
-    linear-gradient(180deg,#fff8fb,#f5f0ff);
+  color:#554a63;
+  background:linear-gradient(180deg,#fff7fb,#f4efff);
   min-height:100vh;
 }
 
 header{
   text-align:center;
-  padding:48px 20px 25px;
+  padding:42px 18px 24px;
 }
 
-.sky{
-  font-size:48px;
-  letter-spacing:8px;
+.stars{
+  font-size:42px;
+  letter-spacing:6px;
 }
 
 h1{
-  margin:12px 0 5px;
-  color:#cf5f88;
-  font-size:34px;
+  color:#cf6088;
+  margin:12px 0 6px;
+  font-size:32px;
 }
 
 .subtitle{
@@ -44,23 +38,23 @@ h1{
 }
 
 .container{
-  width:90%;
+  width:91%;
   max-width:650px;
   margin:auto;
-  padding-bottom:45px;
+  padding-bottom:40px;
 }
 
 .card{
-  background:rgba(255,255,255,.92);
+  background:white;
   border-radius:24px;
-  padding:22px;
+  padding:21px;
   margin:16px 0;
-  box-shadow:0 8px 25px rgba(105,82,130,.12);
+  box-shadow:0 7px 22px rgba(100,80,125,.12);
 }
 
-.card h2{
+h2{
   margin-top:0;
-  color:#6e5a82;
+  color:#705d83;
 }
 
 .menu{
@@ -69,144 +63,62 @@ h1{
   gap:12px;
 }
 
-button{
+.menu button,.pinkButton{
   border:0;
   border-radius:18px;
   padding:16px 8px;
   font-size:16px;
   background:#fff0f5;
-  color:#684f65;
+  color:#694f63;
+  cursor:pointer;
+}
+
+.menu button:active,.pinkButton:active{
+  transform:scale(.97);
+}
+
+#wordGarden{
+  display:none;
 }
 
 .word{
-  font-size:30px;
+  font-size:38px;
   font-weight:bold;
   color:#d45d82;
-  margin:8px 0;
-}
-
-.example{
-  background:#fff8dc;
-  border-radius:15px;
-  padding:14px;
-  line-height:1.7;
-}
-
-.steps{
-  line-height:2;
-  font-size:16px;
-}
-
-.tag{
-  display:inline-block;
-  background:#eee5ff;
-  border-radius:15px;
-  padding:5px 10px;
-  margin:3px;
-}
-
-footer{
   text-align:center;
-  padding:10px 20px 35px;
-  color:#927e9c;
+  margin:12px 0;
 }
-</style>
-</head>
 
-<body>
+.picture{
+  text-align:center;
+  font-size:70px;
+  background:#fff8dc;
+  border-radius:22px;
+  padding:20px;
+}
 
-<header>
-  <div class="sky">⭐ 🌙 🍒 🌸</div>
-  <h1>Cherry Garden English</h1>
-  <div class="subtitle">彩妤的英文小花園</div>
-  <p>每天一點點，英文慢慢開花 🌷</p>
-</header>
+.sound{
+  display:block;
+  margin:15px auto;
+  border:0;
+  border-radius:22px;
+  padding:12px 22px;
+  background:#eee5ff;
+  color:#5d4b73;
+  font-size:17px;
+}
 
-<main class="container">
+.story{
+  background:#fff7df;
+  border-radius:17px;
+  padding:16px;
+  line-height:1.8;
+}
 
-  <section class="card">
-    <h2>🌷 今天想練什麼？</h2>
-
-    <div class="menu">
-      <button>📖 圖解文法</button>
-      <button>🍒 單字花園</button>
-      <button>🎧 朗讀練習</button>
-      <button>📝 閱讀測驗</button>
-      <button>💬 實用片語</button>
-      <button>🌎 時事英文</button>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>🍒 今日圖像單字</h2>
-
-    <div class="word">famous</div>
-    <p>🔊 發音提示：<b>FAY-mus</b></p>
-
-    <div class="example">
-      🌟 想像一位明星站在舞台中央，大家都認識她。<br>
-      <b>famous = 有名的、著名的</b>
-    </div>
-
-    <p>
-      例句：She is a famous singer.<br>
-      她是一位有名的歌手。
-    </p>
-  </section>
-
-  <section class="card">
-    <h2>🧠 Cherry 記憶魔法</h2>
-
-    <div class="steps">
-      ① 👀 先看圖，猜意思<br>
-      ② 👂 聽聲音，記住節奏<br>
-      ③ 🎬 把單字放進一個畫面<br>
-      ④ 💬 放進短句裡<br>
-      ⑤ 🙈 遮住中文，自己想起來
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>📖 文法不要硬背</h2>
-
-    <p>先找三件事：</p>
-
-    <p>
-      <span class="tag">👧 誰？</span>
-      <span class="tag">⏰ 什麼時間？</span>
-      <span class="tag">🏃 做什麼？</span>
-    </p>
-
-    <div class="example">
-      Yesterday, Cherry played the piano.<br><br>
-      ⏰ Yesterday → 昨天<br>
-      👧 Cherry → 誰<br>
-      🎹 played the piano → 做了什麼
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>🌎 今日時事英文</h2>
-    <p>
-      不用一次讀很長。<br>
-      每次只讀一小段，找出人物、時間、動作和關鍵單字。
-    </p>
-  </section>
-
-  <section class="card">
-    <h2>🌟 今天的小任務</h2>
-    <p>
-      不看中文，試著說出：<br><br>
-      <b>famous</b> 是什麼意思？
-    </p>
-  </section>
-
-</main>
-
-<footer>
-  🌸 Keep growing, Cherry! 🌸<br>
-  Cherry Garden English
-</footer>
-
-</body>
-</html>
+.answer{
+  background:#f3edff;
+  border-radius:16px;
+  padding:15px;
+  margin-top:12px;
+  display:none;
+  line-height:1

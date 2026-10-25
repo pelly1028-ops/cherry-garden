@@ -207,6 +207,17 @@ footer{
   🌸 Keep growing, Cherry! 🌸<br>
   Cherry Garden English
 </footer>
+<script>
+function speakEnglish(text) {
+  window.speechSynthesis.cancel();
 
+  const speech = new SpeechSynthesisUtterance(text);
+  speech.lang = "en-US";
+  speech.rate = 0.8;
+  speech.pitch = 1;
+
+  window.speechSynthesis.speak(speech);
+}
+</script>
 </body>
 </html>
